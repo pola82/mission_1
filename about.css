@@ -1,0 +1,136 @@
+/* This block ensures that padding and border are included in the total
+ width and height of the elements, making it easier to control dimensions.*/
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*  body, html ensures that certain styles are applied consistently across the entire document, 
+preventing issues that could arise from default styles and behaviors in different browsers.*/
+body, html {
+  font-family: Arial;
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/Perro\ en\ los\ campos.webp");
+ background-color: transparent;
+/* Set a specific height */
+height: 100%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+
+
+header {
+  padding:0px;
+  text-align: center;
+  background-color:transparent ;
+  color:azure
+}
+
+/* Styles for navigation bar */
+ nav {
+  display: flex;
+  background-color: transparent;
+}
+
+nav a {
+  color:black;
+  text-decoration:none;
+  padding:14px 20px;
+  text-align: center;
+}
+
+nav a:hover{
+  background-color:yellow;
+  color:peru;
+}
+
+/* Styles for main content area */
+main {
+  display: flex;
+ /*background-color: lightblue;*/
+  align-items: center;
+  margin: 53px 53px;
+
+  
+}
+/* Styles for the left section of main content */
+#left {
+  /*background-color: lightgreen;*/
+  margin: 30px 90px; /* Adds margins around left section */
+  width: 50%; /* Makes left section take up 50% of the width */
+}
+
+#left > h1 {
+  font-size: 40px;
+}
+
+#left > p {
+  margin: 35px 0;
+}
+
+/* Styles for the contact form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin:20px;
+  padding:20px;
+}
+
+form > label {
+  margin: 5px 0;
+}
+
+form > input, form > textarea {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+form > input[type="submit"] {
+  padding: 10px 20px;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+form > input[type="submit"]:hover {
+  background-color: #396ee1;
+  color: white;
+}
+
+.chat-btn{
+  display:block;
+  margin:20px 0;
+  padding: 14px 25px;
+  width: 200px;
+  font-family: inherit;
+  font-weight: 700;
+  border:none;
+  background-color: yellow;
+
+}
+.chat-btn:hover {
+  background-color: #396ee1;
+  color:white;
+  cursor:pointer;
+}
+
+/* Styles for the right section of main content */
+#right > img {
+
+  /*background-color: pink;*/
+  width: 78%;
+  height: 59%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+ 
